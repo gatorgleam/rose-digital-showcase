@@ -134,15 +134,7 @@ const Projects = () => {
                   ))}
                 </div>
 
-                {/* Hover Effect */}
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="border-t border-portfolio-primary/10 pt-4">
-                    <Button variant="portfolio" size="sm" className="w-full">
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      View Project Details
-                    </Button>
-                  </div>
-                </div>
+                {/* Hover Effect removed per request */}
               </div>
             ))}
           </div>
