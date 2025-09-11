@@ -134,6 +134,23 @@ const Projects = () => {
                   ))}
                 </div>
 
+                {/* 1031 Capital Solutions link and note */}
+                {index === 0 && (
+                  <div className="border-t border-portfolio-primary/10 pt-4">
+                    <a
+                      href="https://1031capitalsolutions.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-portfolio-primary font-medium inline-flex items-center gap-2 hover:underline"
+                    >
+                      Visit 1031capitalsolutions.com
+                    </a>
+                    <div className="text-sm text-portfolio-muted mt-1">
+                      I custom developed their website.
+                    </div>
+                  </div>
+                )}
+
                 {/* Hover Effect removed per request */}
               </div>
             ))}
