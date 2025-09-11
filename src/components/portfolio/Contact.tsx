@@ -39,8 +39,8 @@ const Contact = () => {
               Let's Work Together
             </h2>
             <p className="text-xl text-portfolio-muted max-w-2xl mx-auto">
-              Ready to elevate your brand with strategic marketing and beautiful web design? 
-              I'd love to discuss your project and how I can help bring your vision to life.
+              Ready to scale your business with proven digital marketing strategies? 
+              Let's discuss how I can help generate qualified leads and grow your revenue.
             </p>
           </div>
 
@@ -53,9 +53,9 @@ const Contact = () => {
                   Get In Touch
                 </h3>
                 <p className="text-portfolio-muted leading-relaxed mb-8">
-                  Whether you're a startup looking to establish your digital presence or an 
-                  established business ready to take your marketing to the next level, 
-                  I'm here to help you succeed.
+                  Whether you're looking to generate more qualified leads, increase your social media presence, 
+                  or optimize your marketing campaigns for better ROI, I specialize in creating data-driven 
+                  strategies that deliver measurable results.
                 </p>
               </div>
 
@@ -126,11 +126,11 @@ const Contact = () => {
                   
                   <div>
                     <h3 className="text-2xl font-semibold text-portfolio-neutral mb-4">
-                      Ready to Start Your Project?
+                      Ready to Scale Your Marketing?
                     </h3>
                     <p className="text-portfolio-muted leading-relaxed">
-                      Let's schedule a consultation to discuss your goals, timeline, 
-                      and how I can help transform your digital presence.
+                      Let's schedule a free consultation to discuss your marketing goals, current challenges, 
+                      and how I can help you generate more qualified leads and grow your business.
                     </p>
                   </div>
 
@@ -141,19 +141,19 @@ const Contact = () => {
                     <div className="grid grid-cols-1 gap-3 text-left">
                       <div className="flex items-center gap-3">
                         <div className="w-2 h-2 bg-portfolio-primary rounded-full" />
-                        <span className="text-sm text-portfolio-muted">Free initial consultation</span>
+                        <span className="text-sm text-portfolio-muted">Free marketing consultation</span>
                       </div>
                       <div className="flex items-center gap-3">
                         <div className="w-2 h-2 bg-portfolio-primary rounded-full" />
-                        <span className="text-sm text-portfolio-muted">Custom strategy proposal</span>
+                        <span className="text-sm text-portfolio-muted">Custom campaign strategy</span>
                       </div>
                       <div className="flex items-center gap-3">
                         <div className="w-2 h-2 bg-portfolio-primary rounded-full" />
-                        <span className="text-sm text-portfolio-muted">Transparent project timeline</span>
+                        <span className="text-sm text-portfolio-muted">Performance tracking & reporting</span>
                       </div>
                       <div className="flex items-center gap-3">
                         <div className="w-2 h-2 bg-portfolio-primary rounded-full" />
-                        <span className="text-sm text-portfolio-muted">Ongoing support & maintenance</span>
+                        <span className="text-sm text-portfolio-muted">Ongoing optimization & support</span>
                       </div>
                     </div>
                   </div>

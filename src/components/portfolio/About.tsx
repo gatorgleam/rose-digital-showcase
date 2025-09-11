@@ -4,25 +4,25 @@ const About = () => {
   const highlights = [
     {
       icon: <Target className="w-6 h-6" />,
-      title: "Strategic Marketing",
-      description: "End-to-end event marketing from concept to execution"
+      title: "Lead Generation",
+      description: "Multi-channel campaigns that consistently book 10+ qualified prospect meetings per week"
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Technical Expertise",
-      description: "Custom web development with modern tools and frameworks"
+      title: "Performance Analytics",
+      description: "Data-driven optimization using UTM tracking, Google Analytics, and conversion metrics"
     },
     {
       icon: <Users className="w-6 h-6" />,
-      title: "Client-Focused",
-      description: "Building lasting relationships through exceptional results"
+      title: "Campaign Management",
+      description: "End-to-end digital marketing from strategy development through execution and reporting"
     }
   ];
 
   const skills = [
-    "Web Development", "Social Media Marketing", "Event Management", 
-    "SEO & Analytics", "Brand Strategy", "Project Management",
-    "Figma & Design Tools", "HubSpot CRM", "Content Creation"
+    "Digital Marketing Strategy", "Lead Generation Campaigns", "Social Media Management", 
+    "Google Analytics & UTM Tracking", "Email Marketing Automation", "Content Marketing",
+    "HubSpot CRM & Sales Funnels", "Paid Advertising (Social/Search)", "SEO & Local Search"
   ];
 
   return (
@@ -35,8 +35,8 @@ const About = () => {
               About Me
             </h2>
             <p className="text-xl text-portfolio-muted max-w-2xl mx-auto">
-              A passionate marketer and developer who believes in the power of 
-              combining creative strategy with technical excellence.
+              A results-driven digital marketing strategist who combines data analytics 
+              with creative campaigns to drive measurable business growth.
             </p>
           </div>
 
@@ -50,17 +50,17 @@ const About = () => {
               <div className="space-y-4 text-portfolio-muted">
                 <p className="leading-relaxed">
                   Based in Carlsbad, CA, I'm the founder of Gator Gleam Digital Marketing Agency, 
-                  where I help businesses create meaningful connections with their audiences through 
-                  strategic marketing and beautiful web experiences.
+                  where I develop and execute comprehensive digital marketing strategies that drive 
+                  qualified leads and measurable ROI for growing businesses.
                 </p>
                 <p className="leading-relaxed">
-                  From my full-time role as Marketing Coordinator at 1031 Capital Solutions to 
-                  managing diverse freelance projects, I've developed a unique perspective on what 
-                  it takes to drive real results in today's digital landscape.
+                  At 1031 Capital Solutions, I consistently generate 10+ qualified prospect meetings per week 
+                  through strategic lead outreach campaigns, cross-team communication, and performance-optimized 
+                  marketing funnels that convert prospects into clients.
                 </p>
                 <p className="leading-relaxed">
-                  I specialize in creating cohesive brand experiences that not only look amazing 
-                  but actually convert visitors into customers.
+                  My approach combines data-driven insights with creative execution - from social media campaigns 
+                  and email automation to SEO optimization and paid advertising that delivers results you can measure.
                 </p>
               </div>
             </div>

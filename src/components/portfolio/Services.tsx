@@ -3,40 +3,40 @@ import { Code, Megaphone, PenTool, BarChart3, Globe, Users } from "lucide-react"
 const Services = () => {
   const services = [
     {
-      icon: <Code className="w-8 h-8" />,
-      title: "Web Development",
-      description: "Custom websites and landing pages built with modern frameworks like React, HTML5/CSS3, and JavaScript.",
-      features: ["Responsive Design", "Custom CSS/HTML", "Squarespace 7.1", "Performance Optimization"]
-    },
-    {
       icon: <Megaphone className="w-8 h-8" />,
-      title: "Digital Marketing",
-      description: "Strategic marketing campaigns that drive engagement and convert visitors into customers.",
-      features: ["Social Media Management", "Content Strategy", "Email Marketing", "Lead Generation"]
-    },
-    {
-      icon: <PenTool className="w-8 h-8" />,
-      title: "Brand & Design",
-      description: "On-brand creative design that captures your unique voice and resonates with your audience.",
-      features: ["Brand Identity", "Figma Design", "Canva Templates", "Marketing Materials"]
+      title: "Lead Generation Campaigns",
+      description: "Multi-channel outreach strategies that consistently deliver 10+ qualified prospect meetings per week through targeted campaigns.",
+      features: ["Email Marketing Automation", "LinkedIn Outreach", "Social Media Advertising", "Lead Scoring & Nurturing"]
     },
     {
       icon: <BarChart3 className="w-8 h-8" />,
-      title: "SEO & Analytics",
-      description: "Data-driven optimization to improve your search rankings and track performance.",
-      features: ["On-page SEO", "Google Analytics", "UTM Tracking", "Performance Reports"]
-    },
-    {
-      icon: <Globe className="w-8 h-8" />,
-      title: "Event Marketing",
-      description: "End-to-end event management from RSVP systems to post-event recap and analysis.",
-      features: ["Event Planning", "Vendor Coordination", "RSVP Management", "Post-Event Analysis"]
+      title: "Performance Analytics",
+      description: "Data-driven campaign optimization using advanced tracking, UTM parameters, and conversion analysis to maximize ROI.",
+      features: ["Google Analytics Setup", "UTM Campaign Tracking", "Conversion Rate Analysis", "Monthly Performance Reports"]
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "Project Management",
-      description: "Streamlined operations using modern tools like Trello, Slack, and HubSpot for maximum efficiency.",
-      features: ["Team Coordination", "Client Communication", "Timeline Management", "Quality Assurance"]
+      title: "Social Media Management",
+      description: "Strategic social media campaigns that build brand awareness, engage audiences, and drive qualified traffic to your business.",
+      features: ["Content Strategy & Creation", "Community Management", "Paid Social Advertising", "Social Media Analytics"]
+    },
+    {
+      icon: <PenTool className="w-8 h-8" />,
+      title: "Content Marketing",
+      description: "Compelling content that positions your brand as an industry leader while driving organic traffic and lead generation.",
+      features: ["Blog Content Strategy", "Email Newsletter Creation", "Marketing Copy & Messaging", "Content Calendar Planning"]
+    },
+    {
+      icon: <Globe className="w-8 h-8" />,
+      title: "SEO & Local Search",
+      description: "Comprehensive search engine optimization to improve your visibility and attract high-intent prospects organically.",
+      features: ["On-page SEO Optimization", "Local Business Optimization", "Keyword Strategy", "Technical SEO Audits"]
+    },
+    {
+      icon: <Code className="w-8 h-8" />,
+      title: "Marketing Technology",
+      description: "Strategic implementation of marketing tools and automation systems to streamline operations and improve campaign effectiveness.",
+      features: ["HubSpot CRM Integration", "Marketing Automation Setup", "Landing Page Development", "Conversion Tracking"]
     }
   ];
 
@@ -50,8 +50,8 @@ const Services = () => {
               Services & Expertise
             </h2>
             <p className="text-xl text-portfolio-muted max-w-3xl mx-auto">
-              From concept to execution, I provide comprehensive digital solutions 
-              that help businesses thrive in today's competitive landscape.
+              Comprehensive digital marketing solutions that drive qualified leads, increase brand awareness, 
+              and deliver measurable ROI for growing businesses.
             </p>
           </div>
 
@@ -100,10 +100,10 @@ const Services = () => {
           <div className="mt-20 text-center">
             <div className="bg-gradient-to-r from-portfolio-primary to-portfolio-secondary rounded-3xl p-12 text-white">
               <h3 className="text-3xl font-bold mb-4">
-                Ready to Transform Your Digital Presence?
+                Ready to Scale Your Digital Marketing?
               </h3>
               <p className="text-xl mb-8 opacity-90">
-                Let's discuss how I can help bring your vision to life with strategic marketing and beautiful design.
+                Let's create a data-driven marketing strategy that generates qualified leads and grows your business.
               </p>
               <button
                 onClick={() => {

@@ -31,17 +31,17 @@ const Hero = () => {
               </h1>
               
               <div className="flex flex-wrap gap-2 text-portfolio-muted text-lg">
-                <span>Design-Forward Marketer</span>
+                <span>Digital Marketing Strategist</span>
                 <span>•</span>
-                <span>Web Developer</span>
+                <span>Lead Generation Expert</span>
                 <span>•</span>
                 <span>Agency Founder</span>
               </div>
             </div>
 
             <p className="text-xl text-portfolio-muted leading-relaxed max-w-2xl">
-              I run end-to-end event marketing, from RSVP to recap. I build on-brand creative, 
-              handle vendors and logistics, and drive outreach that converts.
+              I drive digital marketing campaigns that generate qualified leads and convert prospects into customers. 
+              Specializing in multi-channel strategies, social media management, and performance-driven campaigns.
             </p>
 
             <div className="flex flex-wrap gap-4">
