@@ -16,11 +16,10 @@ const Hero = () => {
       <div className="container mx-auto px-6 py-20 relative z-10">
         <div className="grid gap-12 items-center">
           {/* Text Content */}
-          <div className="space-y-8 text-center lg:text-left">
+          <div className="space-y-8 text-center">
             <div className="space-y-4">
-              <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight">
-                <span className="text-portfolio-neutral">Abigail</span>
-                <br />
+              <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight whitespace-nowrap">
+                <span className="text-portfolio-neutral">Abigail</span>{' '}
                 <span 
                   className="bg-clip-text text-transparent bg-gradient-to-r from-portfolio-primary to-portfolio-secondary"
                   style={{ backgroundImage: 'var(--gradient-primary)' }}
@@ -29,7 +28,7 @@ const Hero = () => {
                 </span>
               </h1>
               
-              <div className="flex flex-wrap gap-2 text-portfolio-muted text-lg">
+              <div className="flex flex-wrap justify-center gap-2 text-portfolio-muted text-lg">
                 <span>Digital Marketing Strategist</span>
                 <span>•</span>
                 <span>Lead Generation Expert</span>
@@ -38,12 +37,12 @@ const Hero = () => {
               </div>
             </div>
 
-            <p className="text-xl text-portfolio-muted leading-relaxed max-w-2xl">
+            <p className="text-xl text-portfolio-muted leading-relaxed max-w-2xl mx-auto">
               I drive digital marketing campaigns that generate qualified leads and convert prospects into customers. 
               Specializing in multi-channel strategies, social media management, and performance-driven campaigns.
             </p>
 
-            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+            <div className="flex flex-wrap gap-4 justify-center">
               <Button 
                 variant="primary" 
                 size="lg"
@@ -65,7 +64,7 @@ const Hero = () => {
               </Button>
             </div>
 
-            <div className="flex items-center gap-4 pt-4 justify-center lg:justify-start">
+            <div className="flex items-center gap-4 pt-4 justify-center">
               <div className="h-px bg-gradient-to-r from-portfolio-primary to-transparent flex-1" />
               <span className="text-portfolio-muted text-sm">Carlsbad, CA</span>
             </div>

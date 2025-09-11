@@ -145,9 +145,6 @@ const Projects = () => {
                     >
                       Visit 1031capitalsolutions.com
                     </a>
-                    <div className="text-sm text-portfolio-muted mt-1">
-                      I custom developed their website.
-                    </div>
                   </div>
                 )}
 
