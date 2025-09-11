@@ -14,9 +14,9 @@ const Hero = () => {
       
       {/* Content */}
       <div className="container mx-auto px-6 py-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid gap-12 items-center">
           {/* Text Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 text-center lg:text-left">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight">
                 <span className="text-portfolio-neutral">Abigail</span>
@@ -43,7 +43,7 @@ const Hero = () => {
               Specializing in multi-channel strategies, social media management, and performance-driven campaigns.
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
               <Button 
                 variant="primary" 
                 size="lg"
@@ -65,31 +65,12 @@ const Hero = () => {
               </Button>
             </div>
 
-            <div className="flex items-center gap-4 pt-4">
+            <div className="flex items-center gap-4 pt-4 justify-center lg:justify-start">
               <div className="h-px bg-gradient-to-r from-portfolio-primary to-transparent flex-1" />
               <span className="text-portfolio-muted text-sm">Carlsbad, CA</span>
             </div>
           </div>
 
-          {/* Image placeholder (removed per request) */}
-          <div className="relative">
-            <div className="relative">
-              <div 
-                className="absolute -inset-4 rounded-3xl opacity-20 blur-3xl"
-                style={{ background: 'var(--gradient-primary)' }}
-              />
-              <div className="relative bg-white rounded-3xl p-6 shadow-xl">
-                <div className="w-full h-[500px] rounded-2xl bg-gradient-to-br from-muted/40 to-muted/60 flex items-center justify-center text-portfolio-muted">
-                  <span className="text-sm">Image removed</span>
-                </div>
-              </div>
-              <div className="absolute -top-4 -right-4 bg-white rounded-2xl p-4 shadow-lg">
-                <div className="w-12 h-12 bg-gradient-to-br from-portfolio-primary to-portfolio-secondary rounded-xl flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">AL</span>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Scroll indicator */}
