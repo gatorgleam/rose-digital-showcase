@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Mail, ExternalLink } from "lucide-react";
-import abigailHeadshot from "@/assets/abigail-headshot.jpg";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -72,25 +71,18 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Image */}
+          {/* Image placeholder (removed per request) */}
           <div className="relative">
             <div className="relative">
-              {/* Background decoration */}
               <div 
                 className="absolute -inset-4 rounded-3xl opacity-20 blur-3xl"
                 style={{ background: 'var(--gradient-primary)' }}
               />
-              
-              {/* Main image container */}
               <div className="relative bg-white rounded-3xl p-6 shadow-xl">
-                <img
-                  src={abigailHeadshot}
-                  alt="Abigail Lehr - Professional Portrait"
-                  className="w-full h-[500px] object-cover rounded-2xl"
-                />
+                <div className="w-full h-[500px] rounded-2xl bg-gradient-to-br from-muted/40 to-muted/60 flex items-center justify-center text-portfolio-muted">
+                  <span className="text-sm">Image removed</span>
+                </div>
               </div>
-
-              {/* Floating elements */}
               <div className="absolute -top-4 -right-4 bg-white rounded-2xl p-4 shadow-lg">
                 <div className="w-12 h-12 bg-gradient-to-br from-portfolio-primary to-portfolio-secondary rounded-xl flex items-center justify-center">
                   <span className="text-white font-bold text-xl">AL</span>
