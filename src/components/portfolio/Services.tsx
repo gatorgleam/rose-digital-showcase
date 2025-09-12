@@ -1,4 +1,5 @@
 import { Code, Megaphone, PenTool, BarChart3, Globe, Users } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Services = () => {
   const services = [
@@ -45,36 +46,55 @@ const Services = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6 }}
+          >
             <h2 className="text-4xl lg:text-5xl font-bold text-portfolio-neutral mb-6">
               Services & Expertise
             </h2>
             <p className="text-xl text-portfolio-muted max-w-3xl mx-auto">
-              Comprehensive digital marketing solutions that drive qualified leads, increase brand awareness, 
+              Comprehensive digital marketing solutions that drive qualified leads, increase brand awareness,
               and deliver measurable ROI for growing businesses.
             </p>
-          </div>
+          </motion.div>
 
           {/* Services Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <motion.div
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={{ visible: { transition: { staggerChildren: 0.08 } } }}
+          >
             {services.map((service, index) => (
-              <div
+              <motion.div
                 key={index}
-                className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-portfolio-primary/5"
+                className="group relative bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent"
+                variants={{ hidden: { opacity: 0, y: 16 }, visible: { opacity: 1, y: 0 } }}
+                whileHover={{ y: -8 }}
+                transition={{ type: "spring", stiffness: 120, damping: 14 }}
               >
+                <div className="pointer-events-none absolute inset-0 rounded-3xl" style={{ padding: 1 }}>
+                  <div className="h-full w-full rounded-3xl" style={{ background: 'linear-gradient(145deg, rgba(59,130,246,0.25), rgba(34,211,238,0.25))' }} />
+                </div>
+                <div className="absolute inset-[1px] rounded-3xl bg-white" />
                 {/* Icon */}
                 <div className="mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-portfolio-primary to-portfolio-secondary rounded-2xl flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
+                  <motion.div className="w-16 h-16 bg-gradient-to-br from-portfolio-primary to-portfolio-secondary rounded-2xl flex items-center justify-center text-white" whileHover={{ scale: 1.08 }}>
                     {service.icon}
-                  </div>
+                  </motion.div>
                 </div>
 
                 {/* Content */}
-                <div className="space-y-4">
+                <div className="relative space-y-5">
                   <h3 className="text-xl font-semibold text-portfolio-neutral">
                     {service.title}
                   </h3>
-                  
+
                   <p className="text-portfolio-muted leading-relaxed">
                     {service.description}
                   </p>
@@ -91,31 +111,39 @@ const Services = () => {
                 </div>
 
                 {/* Hover Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-portfolio-primary/5 to-portfolio-secondary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-              </div>
+                <div className="absolute inset-0 bg-gradient-to-br from-portfolio-primary/5 to-portfolio-secondary/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
 
           {/* CTA Section */}
-          <div className="mt-20 text-center">
-            <div className="bg-gradient-to-r from-portfolio-primary to-portfolio-secondary rounded-3xl p-12 text-white">
-              <h3 className="text-3xl font-bold mb-4">
-                Ready to Scale Your Digital Marketing?
-              </h3>
-              <p className="text-xl mb-8 opacity-90">
-                Let's create a data-driven marketing strategy that generates qualified leads and grows your business.
-              </p>
-              <button
-                onClick={() => {
-                  const element = document.getElementById('contact');
-                  element?.scrollIntoView({ behavior: 'smooth' });
-                }}
-                className="bg-white text-portfolio-primary px-8 py-4 rounded-full font-semibold hover:bg-portfolio-light transition-colors duration-300 hover:scale-105 transform"
-              >
-                Start Your Project
-              </button>
+          <motion.div
+            className="mt-20 text-center"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="relative overflow-hidden rounded-3xl p-12 text-white">
+              <div className="absolute inset-0" style={{ background: 'var(--gradient-primary)' }} />
+              <div className="relative z-10">
+                <h3 className="text-3xl font-bold mb-4">Ready to Scale Your Digital Marketing?</h3>
+                <p className="text-xl mb-8 opacity-90">
+                  Let's create a data-driven marketing strategy that generates qualified leads and grows your business.
+                </p>
+                <button
+                  onClick={() => {
+                    const element = document.getElementById('contact');
+                    element?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="bg-white text-portfolio-primary px-8 py-4 rounded-full font-semibold hover:bg-portfolio-light transition-colors duration-300 hover:scale-105 transform"
+                >
+                  Start Your Project
+                </button>
+              </div>
+              <div className="absolute -inset-10 opacity-30 blur-3xl" style={{ background: 'var(--gradient-secondary)' }} />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
