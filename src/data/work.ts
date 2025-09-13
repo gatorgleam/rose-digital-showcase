@@ -41,12 +41,6 @@ export const WORK_ITEMS: WorkItem[] = [
     src: '/work/websites/Financial Services Website 2.png',
   },
   {
-    id: 'fin-services-3',
-    title: 'Financial Services Website 3',
-    category: 'websites',
-    src: '/work/websites/Financial Services Website 3.png',
-  },
-  {
     id: 'fin-services-4',
     title: 'Financial Services Website 4',
     category: 'websites',
