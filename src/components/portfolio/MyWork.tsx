@@ -19,14 +19,8 @@ const MyWork = () => {
       .then((r) => (r.ok ? r.json() : null))
       .then((m) => {
         if (!m || !Array.isArray(m.items)) return;
-        setItems((prev) => {
-          // Merge static WORK_ITEMS with manifest items, de-duped by src
-          const map = new Map(prev.map((p) => [p.src, p]));
-          for (const it of m.items) {
-            if (!map.has(it.src)) map.set(it.src, it);
-          }
-          return Array.from(map.values());
-        });
+        // Use manifest as source of truth so only existing files are shown
+        setItems(m.items);
         if (Array.isArray(m.folders) && m.folders.length) setFolders(m.folders);
       })
       .catch(() => {});
